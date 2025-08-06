@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Chocolate Cake",
+    "description": "Rich and moist chocolate cake layered with creamy chocolate ganache and topped with chocolate shavings.",
+    "price": "$24.99",
+    "category": "cake",
+    "image": "https://images.unsplash.com/photo-1607257882338-70f7dd2ae344?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2xhc3NpYyUyMENob2NvbGF0ZSUyMENha2V8ZW58MHx8MHx8fDA%3D",
+    "featured": true,
+    "ingredients": ["Dark chocolate", "Butter", "Eggs", "Sugar", "Flour"],
+    "servings": "8-10 people"
+  },
+  {
+    "id": 5,
+    "title": "Red Velvet Cupcakes",
+    "description": "Moist red velvet cupcakes topped with classic cream cheese frosting and a hint of cocoa.",
+    "price": "$18.99",
+    "category": "cake",
+    "image": "/assets/red-velvet-cupcakes.jpg",
+    "featured": false,
+    "ingredients": ["Cocoa powder", "Buttermilk", "Red food coloring", "Cream cheese"],
+    "servings": "12 cupcakes"
+  },
+  {
+    "id": 9,
+    "title": "Lemon Tart",
+    "description": "Zesty lemon curd in a crisp pastry shell, topped with torched meringue for the perfect balance of sweet and tart.",
+    "price": "$21.99",
+    "category": "cake",
+    "image": "/assets/lemon-tart.jpg",
+    "featured": false,
+    "ingredients": ["Lemons", "Eggs", "Butter", "Pastry shell", "Meringue"],
+    "servings": "6-8 people"
+  },
+  {
+    "id": 12,
+    "title": "Tiramisu Cake",
+    "description": "Italian-inspired tiramisu cake with layers of coffee-soaked sponge, mascarpone cream, and cocoa powder.",
+    "price": "$28.99",
+    "category": "cake",
+    "image": "/assets/tiramisu-cake.jpg",
+    "featured": false,
+    "ingredients": ["Mascarpone", "Espresso", "Ladyfingers", "Cocoa powder"],
+    "servings": "10-12 people"
+  },
+  {
+    "id": 15,
+    "title": "Cheesecake Slice",
+    "description": "Creamy New York-style cheesecake with a graham cracker crust, served with berry compote.",
+    "price": "$6.99",
+    "category": "cake",
+    "image": "/assets/cheesecake-slice.jpg",
+    "featured": false,
+    "ingredients": ["Cream cheese", "Graham crackers", "Sour cream", "Vanilla"],
+    "servings": "1 person"
+  },
+  {
+    "id": 19,
+    "title": "Fruit Tarts",
+    "description": "Individual fruit tarts with pastry cream and fresh seasonal fruits, glazed to perfection.",
+    "price": "$5.49",
+    "category": "cake",
+    "image": "/assets/fruit-tarts.jpg",
+    "featured": false,
+    "ingredients": ["Pastry shell", "Pastry cream", "Fresh fruits", "Apricot glaze"],
+    "servings": "1 person"
+  }
+]

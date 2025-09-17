@@ -1,9 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import prophetsData from "../data/prophets.js";
+import sahabasData from "../data/sahabas.js";
 
 const Header = () => {
+  const [open, setOpen] = useState(false); // Desktop dropdown
   const [mobileOpen, setMobileOpen] = useState(false); // Mobile menu toggle
+  const [mobileStoriesOpen, setMobileStoriesOpen] = useState(false); // Mobile dropdown
+  const [prophets, setProphets] = useState([]);
+  const [sahabas, setSahabas] = useState([]);
   const [scrolled, setScrolled] = useState(false); // Track scroll for desktop
+  const dropdownRef = useRef(null);
 
   // Detect scroll for desktop blur
   useEffect(() => {
@@ -12,6 +19,23 @@ const Header = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close desktop dropdown when clicking away
+  useEffect(() => {
+    const onClickAway = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("click", onClickAway);
+    return () => document.removeEventListener("click", onClickAway);
+  }, []);
+
+  // Load unique names
+  useEffect(() => {
+    setProphets([...new Set(prophetsData.map((story) => story.name))]);
+    setSahabas([...new Set(sahabasData.map((story) => story.name))]);
   }, []);
 
 
@@ -34,6 +58,53 @@ const Header = () => {
           <Link to="/about" className="hover:text-blue-600">
             About
           </Link>
+          <div className="relative" ref={dropdownRef}>
+            <button
+              className="hover:text-blue-600"
+              aria-haspopup="menu"
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+            >
+              Stories
+            </button>
+
+            {open && (
+              <div className="absolute left-0 mt-2 shadow-lg rounded-lg p-4 w-[480px] gap-8 flex bg-white">
+                <div>
+                  <h3 className="font-semibold mb-2">Prophets</h3>
+                  <ul className="space-y-1 text-sm">
+                    {prophets.map((name) => (
+                      <li key={`p-${name}`}>
+                        <Link
+                          className="hover:text-blue-600"
+                          to={`/person/Prophet/${encodeURIComponent(name)}`}
+                          onClick={() => setOpen(false)}
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2">Sahabas</h3>
+                  <ul className="space-y-1 text-sm">
+                    {sahabas.map((name) => (
+                      <li key={`s-${name}`}>
+                        <Link
+                          className="hover:text-blue-600"
+                          to={`/person/Sahaba/${encodeURIComponent(name)}`}
+                          onClick={() => setOpen(false)}
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -66,6 +137,59 @@ const Header = () => {
           >
             About
           </Link>
+
+          {/* Mobile Dropdown for Stories */}
+          <div>
+            <button
+              onClick={() => setMobileStoriesOpen((v) => !v)}
+              className="hover:text-blue-600 mb-2"
+            >
+              Stories
+            </button>
+
+            {mobileStoriesOpen && (
+              <div className="shadow-lg rounded-lg p-4 gap-4 flex flex-col bg-white">
+                <div>
+                  <h3 className="font-semibold mb-2 text-black">Prophets</h3>
+                  <ul className="space-y-1 text-sm">
+                    {prophets.map((name) => (
+                      <li key={`mp-${name}`}>
+                        <Link
+                          className="hover:text-blue-600 text-gray-600 transition-colors duration-200 block py-1"
+                          to={`/person/Prophet/${encodeURIComponent(name)}`}
+                          onClick={() => {
+                            setMobileStoriesOpen(false);
+                            setMobileOpen(false);
+                          }}
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 text-black">Sahabas</h3>
+                  <ul className="space-y-1 text-sm">
+                    {sahabas.map((name) => (
+                      <li key={`ms-${name}`}>
+                        <Link
+                          className="hover:text-blue-600 text-gray-600 transition-colors duration-200 block py-1"
+                          to={`/person/Sahaba/${encodeURIComponent(name)}`}
+                          onClick={() => {
+                            setMobileStoriesOpen(false);
+                            setMobileOpen(false);
+                          }}
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       )}
     </header>

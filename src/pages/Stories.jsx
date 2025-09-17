@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import prophetsData from "../data/prophets.js";
 import sahabasData from "../data/sahabas.js";
 import bg from "../assets/background.jpg";
 import Header from "../components/Header";    
 
 const Stories = () => {
+  const navigate = useNavigate();
   const [allStories, setAllStories] = useState([]);
   const [prophets, setProphets] = useState([]);
   const [sahabas, setSahabas] = useState([]);
@@ -37,7 +38,7 @@ const Stories = () => {
   }, []);
 
   const handleCardClick = (story) => {
-    window.location.href = `/story/${story.id}`;
+    navigate(`/story/${story.id}`);
   };
 
   const getReadTime = (content) => {

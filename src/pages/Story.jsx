@@ -71,14 +71,48 @@ const Story = () => {
           )}
         </div>
 
+        {/* Ayah Above */}
+        {story.ayahAbove && (
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg p-6 mb-8 shadow-sm">
+            <div className="flex items-start">
+              <div className="text-green-600 text-2xl mr-3 mt-1">"</div>
+              <div className="flex-1">
+                <p className="text-gray-800 text-lg font-medium leading-relaxed mb-2 font-cardo">
+                  {story.ayahAbove}
+                </p>
+                <p className="text-green-700 text-sm font-medium">
+                  {story.ayahAboveSource}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Story content */}
-        <article className="bg-white rounded-lg shadow-md p-8">
+        <article className="bg-white rounded-lg shadow-md p-8 mb-8">
           <div className="prose max-w-none">
             <div className="whitespace-pre-line text-gray-700 leading-relaxed font-cardo text-lg">
               {story.content}
             </div>
           </div>
         </article>
+
+        {/* Ayah Below */}
+        {story.ayahBelow && (
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 shadow-sm">
+            <div className="flex items-start">
+              <div className="text-blue-600 text-2xl mr-3 mt-1">"</div>
+              <div className="flex-1">
+                <p className="text-gray-800 text-lg font-medium leading-relaxed mb-2 font-cardo">
+                  {story.ayahBelow}
+                </p>
+                <p className="text-blue-700 text-sm font-medium">
+                  {story.ayahBelowSource}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

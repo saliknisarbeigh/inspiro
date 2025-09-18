@@ -198,6 +198,13 @@ const Header = () => {
               </div>
             )}
           </div>
+          <Link
+            to="/stories"
+            className="hover:text-blue-600"
+            onClick={() => setMobileOpen(false)}
+          >
+            All Stories
+          </Link>
         </div>
       )}
     </header>

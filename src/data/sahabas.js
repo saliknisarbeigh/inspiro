@@ -10,6 +10,15 @@ import aliHijra from "../assets/aliHijra.png";
 import aliKhaybar from "../assets/ aliKhaybar.png";
 import aliWisdom from "../assets/ aliWisdom.png";
 import aliTrench from "../assets/aliTrench.png";
+import umarJustice from "../assets/umarJustice.png";
+import umarExpansion from "../assets/umarExpansion.png";
+import umarPatrol from "../assets/umarPatrol.png";
+import umarMartyrdom from "../assets/umarMartyrdom.png";
+import khadijaHonor from "../assets/khadijaHonor .png";
+import khadijaMarriage from "../assets/khadijaMarriage.png";
+import khadijaSupport from "../assets/khadijaSupport.png";
+import khadijaHonored from "../assets/khadijaHonored.png";
+
 const sahabasData = [
   {
     id: "sahaba-abu-bakr-1",
@@ -129,6 +138,81 @@ const sahabasData = [
     image: umar,
   },
   {
+    id: "sahaba-umar-2",
+    personName: "Umar",
+    name: "Umar",
+    title: "The Justice of Umar",
+    chapter: "Fairness and Leadership",
+    shortDescription: "Umar’s unmatched sense of justice during his caliphate.",
+    date: " 636 CE",
+    ayahAbove:
+      "Indeed, Allah commands you to render trusts to whom they are due and when you judge between people to judge with justice.",
+    ayahAboveSource: "Quran 4:58",
+    ayahBelow:
+      "Umar (RA) said: 'Fear Allah, for whoever fears Him, He will protect; whoever obeys Him, He will reward; and whoever thanks Him, He will increase.'",
+    ayahBelowSource: "Athar narrations",
+    content:
+      "As Caliph, Umar ibn al-Khattab (RA) became renowned for his uncompromising justice. He held himself accountable before anyone else, often reminding people that even if a mule stumbled on the road in Iraq, he feared Allah would ask him about it.\n\nHe treated all people equally, whether rich or poor, Arab or non-Arab. In one famous incident, a dispute arose between a Muslim and the son of Amr ibn al-As, the governor of Egypt. When the governor’s son wronged the man, Umar summoned both to Medina. He ordered the oppressed man to strike the governor’s son in return, declaring: *'Since when do you enslave people when they were born free by their mothers?'*\n\nThis fearless commitment to fairness made Umar a symbol of justice in Islam.",
+    image: umarJustice,
+  },
+  {
+    id: "sahaba-umar-3",
+    personName: "Umar",
+    name: "Umar",
+    title: "The Expansion of Islam",
+    chapter: "Growth of the Ummah",
+    shortDescription: "The vast spread of Islam under Umar’s leadership.",
+    date: "634–644 CE",
+    ayahAbove:
+      "When the victory of Allah has come and the conquest, and you see the people entering into the religion of Allah in multitudes.",
+    ayahAboveSource: "Quran 110:1-2",
+    ayahBelow:
+      "It was during Umar’s caliphate that Islam spread across Arabia, Persia, and the Levant.",
+    ayahBelowSource: "Historical Seerah",
+    content:
+      "During his ten-year caliphate, Umar ibn al-Khattab (RA) oversaw the greatest expansion of Islam in history. Muslim armies brought vast lands under Islamic rule, from Persia to Syria to Egypt, spreading justice and the message of Islam.\n\nDespite these victories, Umar remained humble, walking the streets of Medina in patched clothes and personally inspecting the welfare of the people. His leadership combined strength with humility, ensuring that conquest was not for glory, but for the establishment of justice and guidance.\n\nHis era became known as the golden age of Islamic governance, where faith and justice guided every decision.",
+    image: umarExpansion,
+  },
+  {
+    id: "sahaba-umar-4",
+    personName: "Umar",
+    name: "Umar",
+    title: "The Night Patrol",
+    chapter: "Care for the People",
+    shortDescription:
+      "Umar’s habit of secretly patrolling Medina at night to ensure people’s welfare.",
+    date: " 638 CE",
+    ayahAbove:
+      "Indeed, the most noble of you in the sight of Allah is the most righteous of you.",
+    ayahAboveSource: "Quran 49:13",
+    ayahBelow:
+      "Umar (RA) would often roam the streets at night to see the needs of his people, unnoticed.",
+    ayahBelowSource: "Historical narrations",
+    content:
+      "Umar ibn al-Khattab (RA) was not a distant ruler. At night, he would patrol the streets of Medina in secret, ensuring the poor and needy were cared for. On one such night, he overheard a woman boiling water to silence her hungry children. Moved to tears, Umar rushed to the treasury, carried flour and provisions on his own back, and cooked food for the family himself.\n\nThis humility and concern for his people showed that leadership in Islam is service, not privilege. Umar’s legacy of compassion remains a timeless model for rulers and leaders.",
+    image: umarPatrol,
+  },
+  {
+    id: "sahaba-umar-5",
+    personName: "Umar",
+    name: "Umar",
+    title: "The Martyrdom of Umar",
+    chapter: "Final Days",
+    shortDescription:
+      "The tragic assassination of Umar during prayer in Medina.",
+    date: "644 CE",
+    ayahAbove:
+      "And do not say about those who are killed in the way of Allah, 'They are dead.' Rather, they are alive, but you perceive [it] not.",
+    ayahAboveSource: "Quran 2:154",
+    ayahBelow:
+      "The Prophet Muhammad (peace be upon him) said: 'Umar is in Paradise.'",
+    ayahBelowSource: "Sunan al-Tirmidhi 3681",
+    content:
+      "In 644 CE, Umar ibn al-Khattab (RA) was leading the Fajr prayer in Medina when he was suddenly attacked and fatally wounded by an assassin. Despite his injuries, he ensured the prayer was completed before collapsing.\n\nOn his deathbed, Umar expressed humility, asking to be buried beside his beloved companions — the Prophet Muhammad (peace be upon him) and Abu Bakr (RA). His passing marked the end of a golden era of justice and strength.\n\nTo this day, Umar is remembered as al-Faruq, 'the one who distinguishes between truth and falsehood,' a leader whose courage, justice, and humility continue to inspire the Muslim world.",
+    image: umarMartyrdom,
+  },
+
+  {
     id: "sahaba-ali-1",
     personName: "Ali",
     name: "Ali",
@@ -192,7 +276,7 @@ const sahabasData = [
     chapter: "Knowledge and Justice",
     shortDescription:
       "Ali’s deep wisdom and justice in guiding the Muslim community.",
-    date: "circa 650 CE",
+    date: "650 CE",
     ayahAbove:
       "And establish weight in justice and do not make deficient the balance.",
     ayahAboveSource: "Quran 55:9",
@@ -239,6 +323,82 @@ const sahabasData = [
     content:
       "Khadija bint Khuwaylid (may Allah be pleased with her) was the first wife of the Prophet Muhammad (peace be upon him) and the first person to believe in his message. She was a woman of honor, wealth, and intelligence, but above all, of faith and devotion.\n\nBefore marrying the Prophet, Khadija was already a respected businesswoman in Mecca, admired for her honesty and generosity. Hearing of Muhammad’s unmatched character, she entrusted him with her trade. His honesty impressed her, and soon she proposed marriage. Their union was one of mutual love, trust, and respect.\n\nWhen the Prophet received his first revelation in the Cave of Hira, he returned home trembling and overwhelmed. It was Khadija who comforted him, wrapping him in a cloak and reassuring him: *'By Allah, Allah will never disgrace you. You keep good relations with your family, you help the poor and the needy, you serve your guests generously, and you assist those in difficulty.'* She was the first to affirm his mission, giving him strength when doubt weighed heavily.\n\nThroughout years of persecution, Khadija stood by the Prophet unwaveringly. She used her wealth to support the early Muslims, feeding the hungry and providing for those boycotted by the Quraysh. During the harsh boycott in the valley of Abu Talib, she endured hunger and hardship without complaint.\n\nHer death in the Year of Sorrow was one of the hardest moments in the Prophet’s life. He never forgot her loyalty and would often speak of her with love and respect, honoring her memory.\n\nKhadija’s life remains an inspiration for all believers, showing that true greatness lies in faith, sacrifice, and unwavering support for the truth.",
     image: khadija,
+  },
+  {
+    id: "sahaba-khadija-2",
+    personName: "Khadija",
+    name: "Khadija",
+    title: "A Woman of Honor",
+    chapter: "Respected in Mecca",
+    shortDescription:
+      "Khadija was admired for her honesty, generosity, and noble character even before Islam.",
+    date: "555 CE",
+    ayahAbove: "Indeed, Allah loves the doers of good.",
+    ayahAboveSource: "Quran 5:93",
+    ayahBelow:
+      "The Prophet (pbuh) said: 'The best of you are those best to their families, and I am the best to my family.'",
+    ayahBelowSource: "Tirmidhi 3895",
+    content:
+      "Before the advent of Islam, Khadija bint Khuwaylid was already known throughout Mecca as 'al-Tahira' — the Pure One. A successful businesswoman, she was admired for her honesty, generosity, and noble character. She cared for the poor, supported the needy, and was a symbol of dignity among the Quraysh. Her honorable reputation made her deeply respected, and it was this purity of heart that prepared her to be the first believer in the Prophet’s mission.",
+    image: khadijaHonor,
+  },
+
+  {
+    id: "sahaba-khadija-3",
+    personName: "Khadija",
+    name: "Khadija",
+    title: "A Blessed Marriage",
+    chapter: "Union with the Prophet",
+    shortDescription:
+      "Khadija proposed marriage to Muhammad after witnessing his honesty in trade.",
+    date: "595 CE",
+    ayahAbove: "And We created you in pairs.",
+    ayahAboveSource: "Quran 78:8",
+    ayahBelow:
+      "The Prophet (pbuh) said: 'She believed in me when the people disbelieved in me.'",
+    ayahBelowSource: "Musnad Ahmad 24596",
+    content:
+      "After entrusting Muhammad (pbuh) with her trade caravan, Khadija was impressed by his honesty and integrity. Unlike others who sought wealth or status, she saw in him a man of truth and trustworthiness. With wisdom and modesty, she proposed marriage. Their union became a blessed partnership built on love, respect, and mutual support, serving as a model for all Muslim families.",
+    image: khadijaMarriage,
+  },
+
+  {
+    id: "sahaba-khadija-4",
+    personName: "Khadija",
+    name: "Khadija",
+    title: "The Pillar of Strength",
+    chapter: "During Persecution",
+    shortDescription:
+      "Khadija supported the Prophet and Muslims during years of hardship and persecution.",
+    date: "615 CE",
+    ayahAbove: "So be patient. Indeed, the promise of Allah is truth.",
+    ayahAboveSource: "Quran 30:60",
+    ayahBelow:
+      "The Prophet (pbuh) said: 'The best of its women is Khadija bint Khuwaylid.'",
+    ayahBelowSource: "Musnad Ahmad 27318",
+    content:
+      "As Islam spread, the Quraysh intensified their persecution of the believers. Many Muslims faced hunger, exile, and abuse. Through it all, Khadija stood firmly by the Prophet’s side, offering her wealth to provide food and shelter for the Muslims. She endured the hardship of the boycott in the valley of Abu Talib, sharing in hunger and suffering without ever wavering in her support. She was a true pillar of strength, embodying patience and sacrifice for the sake of Allah.",
+    image: khadijaSupport,
+  },
+
+  {
+    id: "sahaba-khadija-5",
+    personName: "Khadija",
+    name: "Khadija",
+    title: "Glad Tidings from Allah",
+    chapter: "Honored by Allah",
+    shortDescription:
+      "Khadija was given glad tidings of a palace in Paradise by Angel Jibreel.",
+    date: "Late Life",
+    ayahAbove:
+      "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow.",
+    ayahAboveSource: "Quran 98:8",
+    ayahBelow:
+      "Angel Jibreel came to the Prophet and said: 'Give Khadija glad tidings of a house in Paradise made of pearls.'",
+    ayahBelowSource: "Sahih Bukhari 3820",
+    content:
+      "One of the greatest honors given to Khadija was the glad tidings of Paradise delivered by Angel Jibreel. The Prophet (pbuh) was told: 'Give Khadija the glad tidings of a palace in Paradise made of pearls, where there will be no noise or fatigue.' This immense honor reflected her unmatched sacrifice and devotion. Her legacy as the Mother of the Believers continues to inspire Muslims, especially women, as a role model of faith, strength, and unwavering love for Allah and His Messenger.",
+    image: khadijaHonored,
   },
 ];
 

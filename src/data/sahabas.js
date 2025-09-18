@@ -6,7 +6,10 @@ import khadija from "../assets/khadija.png";
 import abuBakrCharity from "../assets/abuBakrCharity.png";
 import abuBakrBilal from "../assets/abuBakrBilal.png";
 import abuBakrQuran from "../assets/abuBakrQuran.png";
-
+import aliHijra from "../assets/aliHijra.png";
+import aliKhaybar from "../assets/ aliKhaybar.png";
+import aliWisdom from "../assets/ aliWisdom.png";
+import aliTrench from "../assets/aliTrench.png";
 const sahabasData = [
   {
     id: "sahaba-abu-bakr-1",
@@ -143,6 +146,81 @@ const sahabasData = [
       "Ali ibn Abi Talib (may Allah be pleased with him), the cousin and son-in-law of the Prophet Muhammad (peace be upon him), was one of the earliest Muslims and a figure of immense bravery and wisdom. He is remembered as 'Asadullah' — the Lion of Allah — for his unmatched courage.\n\nAt just a young age, Ali embraced Islam, demonstrating maturity and devotion beyond his years. During the night of Hijra, when assassins surrounded the Prophet’s house, Ali volunteered to sleep in the Prophet’s bed, knowing that death was almost certain. His fearless act allowed the Prophet to safely leave Mecca for Medina.\n\nAli’s bravery shone brightly on the battlefield. In the Battle of Badr, he fought valiantly, striking down enemies with courage that inspired the companions. At the Battle of Khaybar, when the Muslims struggled to break through, the Prophet declared: *'Tomorrow I will give the banner to a man who loves Allah and His Messenger, and whom Allah and His Messenger love.'* The next day, he gave it to Ali, who defeated the enemy and secured victory.\n\nYet, Ali was not only a warrior. He was also a man of deep knowledge and justice. His sermons and sayings reflect profound wisdom. He once said: *'Knowledge enlivens the soul.'* His humility, even while being among the closest to the Prophet, shows his sincerity.\n\nAli’s legacy lives on as a model of courage, justice, and devotion to Allah. His life teaches us that true bravery lies not only in battle, but in standing firm for truth, justice, and faith.",
     image: ali,
   },
+  {
+    id: "sahaba-ali-2",
+    personName: "Ali",
+    name: "Ali",
+    title: "The Night of Hijra",
+    chapter: "Sacrifice and Loyalty",
+    shortDescription:
+      "Ali’s fearless act of sleeping in the Prophet’s bed during the migration to Medina.",
+    date: "622 CE",
+    ayahAbove:
+      "And among the people is he who sells himself, seeking means to the approval of Allah. And Allah is kind to His servants.",
+    ayahAboveSource: "Quran 2:207",
+    ayahBelow:
+      "The Prophet Muhammad (peace be upon him) said: 'Whoever loves Ali has loved me, and whoever hates Ali has hated me.'",
+    ayahBelowSource: "Sunan al-Tirmidhi 3712",
+    content:
+      "On the night of the Hijra, when the Quraysh plotted to assassinate the Prophet Muhammad (peace be upon him), Ali ibn Abi Talib (RA) demonstrated unmatched loyalty. He volunteered to sleep in the Prophet’s bed, fully aware that armed men were waiting outside, ready to strike.\n\nBy this courageous act, Ali allowed the Prophet to leave Mecca safely and begin his migration to Medina. When the Quraysh burst in, they found Ali instead, and the Prophet was already beyond their reach.\n\nThis moment highlights Ali’s deep love for the Prophet, his readiness to sacrifice his own life, and his unwavering trust in Allah’s plan.",
+    image: aliHijra,
+  },
+  {
+    id: "sahaba-ali-3",
+    personName: "Ali",
+    name: "Ali",
+    title: "The Victory at Khaybar",
+    chapter: "Strength and Faith",
+    shortDescription:
+      "Ali’s legendary role in securing victory at the Battle of Khaybar.",
+    date: "628 CE",
+    ayahAbove:
+      "O you who have believed, if you support Allah, He will support you and plant firmly your feet.",
+    ayahAboveSource: "Quran 47:7",
+    ayahBelow:
+      "The Prophet Muhammad (peace be upon him) said: 'Tomorrow I will give the banner to a man who loves Allah and His Messenger, and whom Allah and His Messenger love.'",
+    ayahBelowSource: "Sahih Bukhari 4210",
+    content:
+      "During the Battle of Khaybar, the Muslim army faced a fortified enemy that was difficult to overcome. On the night before the final confrontation, the Prophet Muhammad (peace be upon him) announced that he would give the banner of leadership to a man loved by Allah and His Messenger.\n\nThe next day, he handed it to Ali ibn Abi Talib (RA). Despite suffering from an eye ailment, Ali fought with incredible bravery. Through his leadership and determination, the fortress of Khaybar fell, and victory was secured for the Muslims.\n\nThis battle cemented Ali’s reputation as a fearless warrior whose strength was matched by his faith and devotion.",
+    image: aliKhaybar,
+  },
+  {
+    id: "sahaba-ali-4",
+    personName: "Ali",
+    name: "Ali",
+    title: "The Wisdom of Ali",
+    chapter: "Knowledge and Justice",
+    shortDescription:
+      "Ali’s deep wisdom and justice in guiding the Muslim community.",
+    date: "circa 650 CE",
+    ayahAbove:
+      "And establish weight in justice and do not make deficient the balance.",
+    ayahAboveSource: "Quran 55:9",
+    ayahBelow: "Ali (RA) said: 'Knowledge enlivens the soul.'",
+    ayahBelowSource: "Nahj al-Balagha",
+    content:
+      "Ali ibn Abi Talib (RA) was not only a warrior but also a man of immense knowledge and wisdom. His words, sermons, and judgments continue to inspire generations.\n\nKnown for his fairness, he would resolve disputes with justice rooted in the Qur’an and Sunnah. His sayings emphasized the value of knowledge, patience, and humility. Ali once declared: *'Knowledge enlivens the soul.'*\n\nHis wisdom made him a source of guidance, and his humility showed that true strength lies in intellect and justice, not just physical power.",
+    image: aliWisdom,
+  },
+  {
+    id: "sahaba-ali-5",
+    personName: "Ali",
+    name: "Ali",
+    title: "The Defender at the Trench",
+    chapter: "Protection of Islam",
+    shortDescription:
+      "Ali’s bravery in defending the Muslims during the Battle of the Trench.",
+    date: "627 CE",
+    ayahAbove: "Indeed, Allah defends those who have believed.",
+    ayahAboveSource: "Quran 22:38",
+    ayahBelow:
+      "Ali (RA) faced one of the fiercest warriors in single combat during the battle, ensuring the safety of the Muslims.",
+    ayahBelowSource: "Seerah narrations",
+    content:
+      "In 627 CE, the Muslims faced one of the gravest threats during the Battle of the Trench. The Quraysh and allied tribes had surrounded Medina, hoping to crush Islam once and for all. A trench dug around the city prevented a direct assault.\n\nOne of the enemy’s strongest warriors, Amr ibn Abd Wudd, crossed the trench, challenging the Muslims to single combat. Ali ibn Abi Talib (RA) stepped forward with courage, accepting the challenge.\n\nTheir duel was fierce, but Ali’s faith and bravery prevailed. His victory boosted the morale of the Muslims and helped turn the tide of the battle. Ali’s defense that day symbolized his role as a protector of Islam in its most vulnerable moments.",
+    image: aliTrench,
+  },
+
   {
     id: "sahaba-khadija-1",
     personName: "Khadija",

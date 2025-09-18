@@ -52,7 +52,7 @@ const Person = () => {
     <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg})` }}>
       <Header />
 
-      <div className="relative z-10 max-w-6xl mx-auto py-12 px-4 w-full overflow-hidden min-h-[calc(100vh-4rem)]">
+      <div className="relative z-10 max-w-6xl mx-auto py-12 px-4 w-full overflow-hidden min-h-[calc(100vh-4rem)]" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitScrollbar: 'none' }}>
         {/* Enhanced Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 font-serif leading-tight">

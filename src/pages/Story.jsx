@@ -51,7 +51,7 @@ const Story = () => {
   return (
     <div className="min-h-screen bg-cover bg-center bg-no-repeat fixed inset-0" style={{ backgroundImage: `url(${bg})` }}>
       <Header />
-      <div className="relative z-10 max-w-4xl mx-auto px-4 py-8 mt-16 h-screen overflow-y-auto bg-white/10 backdrop-blur-md rounded-lg" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      <div className="relative z-10 max-w-4xl mx-auto px-4 py-8 mt-16 h-screen overflow-y-auto bg-white/10 backdrop-blur-md rounded-lg" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitScrollbar: 'none' }}>
 
         {/* Story header */}
         <div className="mb-8">
@@ -151,34 +151,6 @@ const Story = () => {
           </div>
         )}
 
-        {/* Navigation and Actions */}
-        <div className="flex items-center justify-center mb-8">
-          <div className="flex items-center gap-4">
-            {prevStory && (
-              <button
-                onClick={() => navigate(`/story/${prevStory.id}`)}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                <span className="text-sm font-medium">Previous</span>
-              </button>
-            )}
-            
-            {nextStory && (
-              <button
-                onClick={() => navigate(`/story/${nextStory.id}`)}
-                className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
-              >
-                <span className="text-sm font-medium">Next Story</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            )}
-          </div>
-        </div>
       </div>
     </div>
   );

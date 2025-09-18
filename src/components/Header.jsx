@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import prophetsData from "../data/prophets.js";
 import sahabasData from "../data/sahabas.js";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false); // Desktop dropdown
@@ -46,8 +47,12 @@ const Header = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-semibold">
-        Logo
+        <Link to="/" className="flex items-center">
+          <img 
+            src={logo} 
+            alt="Stories of Prophets and Sahabas" 
+            className="h-16 w-auto rounded-full"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -69,7 +74,7 @@ const Header = () => {
             </button>
 
             {open && (
-              <div className="absolute left-0 mt-2 shadow-lg rounded-lg p-4 w-[480px] gap-8 flex bg-white">
+              <div className="absolute left-0 mt-2 shadow-lg rounded-lg p-4 w-[480px] gap-8 flex" style={{ backgroundColor: '#E3E1D8' }}>
                 <div>
                   <h3 className="font-semibold mb-2">Prophets</h3>
                   <ul className="space-y-1 text-sm">
@@ -105,6 +110,9 @@ const Header = () => {
               </div>
             )}
           </div>
+          <Link to="/stories" className="hover:text-blue-600">
+            All Stories
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -122,7 +130,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur border-t border-b shadow-md px-4 py-4 flex flex-col gap-3 transition-all duration-300">
+        <div className="md:hidden backdrop-blur border-t border-b shadow-md px-4 py-4 flex flex-col gap-3 transition-all duration-300" style={{ backgroundColor: '#E3E1D8' }}>
           <Link
             to="/"
             className="hover:text-blue-600"
@@ -148,7 +156,7 @@ const Header = () => {
             </button>
 
             {mobileStoriesOpen && (
-              <div className="shadow-lg rounded-lg p-4 gap-4 flex flex-col bg-white">
+              <div className="shadow-lg rounded-lg p-4 gap-4 flex flex-col" style={{ backgroundColor: '#E3E1D8' }}>
                 <div>
                   <h3 className="font-semibold mb-2 text-black">Prophets</h3>
                   <ul className="space-y-1 text-sm">

@@ -7,6 +7,7 @@ import khadija from "../assets/khadija.png";
 const sahabasData = [
   {
     id: "sahaba-abu-bakr-1",
+    personName: "Abu Bakr",
     name: "Abu Bakr",
     title: "The First Caliph",
     chapter: "Leadership and Wisdom",
@@ -25,6 +26,7 @@ const sahabasData = [
   },
   {
     id: "sahaba-umar-1",
+    personName: "Umar",
     name: "Umar",
     title: "Umar's Conversion to Islam",
     chapter: "Acceptance of Islam",
@@ -42,6 +44,7 @@ const sahabasData = [
   },
   {
     id: "sahaba-ali-1",
+    personName: "Ali",
     name: "Ali",
     title: "The Lion of Allah",
     chapter: "Courage and Bravery",
@@ -59,6 +62,7 @@ const sahabasData = [
   },
   {
     id: "sahaba-khadija-1",
+    personName: "Khadija",
     name: "Khadija",
     title: "The Mother of the Believers",
     chapter: "Support and Sacrifice",

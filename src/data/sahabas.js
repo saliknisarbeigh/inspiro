@@ -1,8 +1,11 @@
-import nightJourney from "../assets/The Night Journey.png";
+import caveThawr from "../assets/ caveThawr.png";
 import abuBakar from "../assets/abu bakar.png";
 import umar from "../assets/umar.png";
 import ali from "../assets/ali.png";
 import khadija from "../assets/khadija.png";
+import abuBakrCharity from "../assets/abuBakrCharity.png";
+import abuBakrBilal from "../assets/abuBakrBilal.png";
+import abuBakrQuran from "../assets/abuBakrQuran.png";
 
 const sahabasData = [
   {
@@ -13,7 +16,7 @@ const sahabasData = [
     chapter: "Leadership and Wisdom",
     shortDescription:
       "Abu Bakr's exemplary leadership during the early years of Islam.",
-    date: "Aug 23, 634 CE",
+    date: "634 CE",
     ayahAbove:
       "And whoever is protected from the stinginess of his soul - it is those who will be the successful.",
     ayahAboveSource: "Quran 59:9",
@@ -25,6 +28,86 @@ const sahabasData = [
     image: abuBakar,
   },
   {
+    id: "sahaba-abu-bakr-2",
+    personName: "Abu Bakr",
+    name: "Abu Bakr",
+    title: "The Cave of Thawr",
+    chapter: "Hijra with the Prophet",
+    shortDescription:
+      "Abu Bakr accompanied the Prophet during the migration to Madinah.",
+    date: "622 CE",
+    ayahAbove:
+      "If you do not aid the Prophet - Allah has already aided him when those who disbelieved had driven him out as one of two, when they were in the cave and he said to his companion, 'Do not grieve; indeed Allah is with us.'",
+    ayahAboveSource: "Quran 9:40",
+    ayahBelow:
+      "Abu Bakr said: 'I was with the Prophet in the cave, and if they had looked down, they would have seen us.'",
+    ayahBelowSource: "Sahih Bukhari 3653",
+    content:
+      "When the Prophet Muhammad (peace be upon him) was commanded to migrate to Madinah, Abu Bakr al-Siddiq eagerly offered to accompany him. Their journey was dangerous, as Quraysh sought to capture or kill the Prophet. They hid in the Cave of Thawr for three days while their enemies searched nearby.\n\nAbu Bakr was deeply concerned, not for himself, but for the safety of the Prophet. The Qur’an immortalizes this moment, recording the Prophet’s reassurance to him: *'Do not grieve; indeed Allah is with us.'* This event became a timeless lesson in reliance on Allah, courage, and unwavering loyalty.",
+    image: caveThawr,
+  },
+
+  {
+    id: "sahaba-abu-bakr-3",
+    personName: "Abu Bakr",
+    name: "Abu Bakr",
+    title: "The Generosity of Abu Bakr",
+    chapter: "Charity and Sacrifice",
+    shortDescription:
+      "Abu Bakr gave all his wealth for the sake of Allah in times of need.",
+    date: "624 CE",
+    ayahAbove:
+      "Never will you attain the good [reward] until you spend [in the way of Allah] from that which you love.",
+    ayahAboveSource: "Quran 3:92",
+    ayahBelow:
+      "The Prophet asked: 'What did you leave for your family?' Abu Bakr said: 'I left Allah and His Messenger for them.'",
+    ayahBelowSource: "Sunan al-Tirmidhi 3675",
+    content:
+      "Abu Bakr was known for his unmatched generosity. On several occasions, he gave away his entire wealth to support Islam, leaving nothing but Allah and His Messenger for his family. One such instance occurred during the Battle of Tabuk, when the Prophet called upon the Muslims to contribute for the cause of Allah.\n\nWhile others gave portions of their wealth, Abu Bakr brought everything he owned. His sacrifice highlighted his deep trust in Allah’s provision and his love for the Prophet. This act became legendary, symbolizing the essence of true faith and detachment from worldly possessions.",
+    image: abuBakrCharity,
+  },
+
+  {
+    id: "sahaba-abu-bakr-4",
+    personName: "Abu Bakr",
+    name: "Abu Bakr",
+    title: "The Freed Slaves",
+    chapter: "Supporting the Oppressed",
+    shortDescription:
+      "Abu Bakr spent his wealth to free Muslim slaves tortured for their faith.",
+    date: "615 CE",
+    ayahAbove:
+      "And the righteous one will avoid it - He who gives from his wealth to purify himself.",
+    ayahAboveSource: "Quran 92:17-18",
+    ayahBelow:
+      "Abu Bakr freed Bilal, a slave tortured for saying 'Allah is One.'",
+    ayahBelowSource: "Sunan Ibn Majah 150",
+    content:
+      "Before the Hijra, many early Muslims were enslaved and brutally tortured for accepting Islam. Abu Bakr used his wealth to purchase and free several of them, including Bilal ibn Rabah (RA), who was whipped and dragged under the scorching sun for refusing to renounce his faith.\n\nWhen Bilal declared 'Ahad, Ahad!' (Allah is One), his owner increased the torture. Abu Bakr stepped in, buying Bilal’s freedom and securing his safety. This act of compassion and courage earned him immense reward and demonstrated his role as a protector of the oppressed.",
+    image: abuBakrBilal,
+  },
+
+  {
+    id: "sahaba-abu-bakr-5",
+    personName: "Abu Bakr",
+    name: "Abu Bakr",
+    title: "The Compilation of the Qur’an",
+    chapter: "Preserving Revelation",
+    shortDescription:
+      "Abu Bakr initiated the preservation of the Qur’an in one manuscript.",
+    date: "633 CE",
+    ayahAbove:
+      "Indeed, it is We who sent down the Qur’an and indeed, We will be its guardian.",
+    ayahAboveSource: "Quran 15:9",
+    ayahBelow:
+      "Umar urged Abu Bakr: 'How can you not do something good for the Ummah?'",
+    ayahBelowSource: "Sahih Bukhari 4986",
+    content:
+      "After the Battle of Yamama, many memorizers of the Qur’an were martyred. Umar ibn al-Khattab feared that parts of the Qur’an might be lost if it was not compiled into a single manuscript. Though hesitant at first, Abu Bakr recognized the importance of this task.\n\nHe commissioned Zayd ibn Thabit (RA) to collect the Qur’an from parchments, bones, and the memories of companions. This careful preservation became the foundation of the Uthmani Mushaf later standardized by Caliph Uthman. Abu Bakr’s foresight ensured that the words of Allah would be safeguarded for all generations.",
+    image: abuBakrQuran,
+  },
+
+  {
     id: "sahaba-umar-1",
     personName: "Umar",
     name: "Umar",
@@ -32,7 +115,7 @@ const sahabasData = [
     chapter: "Acceptance of Islam",
     shortDescription:
       "The powerful story of Umar ibn al-Khattab's conversion to Islam.",
-    date: "Sep 3, 613 CE",
+    date: "613 CE",
     ayahAbove: "And Allah guides whom He wills to a straight path.",
     ayahAboveSource: "Quran 2:213",
     ayahBelow:
@@ -50,7 +133,7 @@ const sahabasData = [
     chapter: "Courage and Bravery",
     shortDescription:
       "Ali ibn Abi Talib's legendary courage and devotion to Islam.",
-    date: "Mar 17, 599 CE",
+    date: "599 CE",
     ayahAbove: "And Allah loves those who are firm and steadfast.",
     ayahAboveSource: "Quran 3:146",
     ayahBelow:
@@ -68,7 +151,7 @@ const sahabasData = [
     chapter: "Support and Sacrifice",
     shortDescription:
       "Khadija's unwavering support and sacrifice for the Prophet and Islam.",
-    date: "Nov 19, 619 CE",
+    date: " 619 CE",
     ayahAbove:
       "And cooperate in righteousness and piety, but do not cooperate in sin and aggression.",
     ayahAboveSource: "Quran 5:2",

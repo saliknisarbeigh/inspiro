@@ -50,7 +50,7 @@ const Header = () => {
         <Link to="/" className="flex items-center">
           <img 
             src={logo} 
-            alt="Stories of Prophets and Sahabas" 
+            alt="Inspiro - Stories of Prophets and Sahabas" 
             className="h-16 w-auto rounded-full"
           />
         </Link>

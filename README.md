@@ -1,12 +1,62 @@
-# React + Vite
+# Inspiro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inspiro is a web application that shares inspiring stories from Islamic history, featuring the lives and teachings of Prophets, Sahabas, and other important figures in Islam.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Stories of Prophets**: Learn about the lives and miracles of Prophets like Muhammad, Musa, and Isa
+- **Stories of Sahabas**: Discover the inspiring tales of the companions of Prophet Muhammad
+- **Wisdom & Inspiration**: Access a collection of inspirational quotes and teachings
+- **Beautiful Design**: Enjoy a modern, responsive interface with elegant typography
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19 with Vite
+- **Routing**: React Router DOM
+- **Styling**: Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is private.

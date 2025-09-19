@@ -3,16 +3,24 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import inspireData from "../data/inspire.js";
 import bg from "../assets/inspire.png";
+import { SEO, PAGE_SEO } from "../utils/seo";
 
 const Inspire = () => {
   const inspiringQuotes = inspireData;
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${bg})` }}
-    >
-      <Header />
+    <>
+      <SEO 
+        title={PAGE_SEO.inspire.title}
+        description={PAGE_SEO.inspire.description}
+        keywords={PAGE_SEO.inspire.keywords}
+        url="/inspire"
+      />
+      <div
+        className="min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        <Header />
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto py-12 px-4 w-full overflow-hidden">
@@ -23,7 +31,7 @@ const Inspire = () => {
             </h1>
           </div>
           <p className="text-xl text-cardo drop-shadow-md max-w-2xl mx-auto font-cardo">
-            Discover timeless wisdom and inspiration from Islamic teachings and quotes
+            Discover timeless wisdom and inspiration from Inspiro's collection of teachings and quotes
           </p>
         </div>
 
@@ -59,6 +67,7 @@ const Inspire = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import prophetsData from "../data/prophets.js";
 import sahabasData from "../data/sahabas.js";
 import bg from "../assets/background.jpg";
 import Header from "../components/Header";
+import { SEO, getPersonSEO } from "../utils/seo";
 
 const Person = () => {
   const { category, person } = useParams();
@@ -48,8 +49,17 @@ const Person = () => {
     );
   }
 
+  const seoData = getPersonSEO(person, category);
+  
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg})` }}>
+    <>
+      <SEO 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        url={`/person/${category}/${person}`}
+      />
+      <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg})` }}>
       <Header />
 
       <div className="relative z-10 max-w-6xl mx-auto py-12 px-4 w-full overflow-hidden min-h-[calc(100vh-4rem)]" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitScrollbar: 'none' }}>
@@ -167,6 +177,7 @@ const Person = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

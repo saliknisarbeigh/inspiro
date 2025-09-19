@@ -4,6 +4,7 @@ import prophetsData from "../data/prophets.js";
 import sahabasData from "../data/sahabas.js";
 import Header from "../components/Header.jsx";
 import bg from "../assets/storyBackground.png";
+import { SEO } from "../utils/seo";
 
 const Story = () => {
   const { id } = useParams();
@@ -40,8 +41,16 @@ const Story = () => {
   if (!story) return null;
 
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat fixed inset-0" style={{ backgroundImage: `url(${bg})` }}>
-      <Header />
+    <>
+      <SEO 
+        title={`${story.title} - ${story.name}`}
+        description={`Read the inspiring story of ${story.name}. ${story.description || 'Discover the wisdom and lessons from this important figure in Islamic history.'}`}
+        keywords={`${story.name}, ${story.category}, Islamic stories, ${story.name.toLowerCase()} story, Islamic wisdom, ${story.name.toLowerCase()} teachings`}
+        url={`/story/${story.id}`}
+        type="article"
+      />
+      <div className="min-h-screen bg-cover bg-center bg-no-repeat fixed inset-0" style={{ backgroundImage: `url(${bg})` }}>
+        <Header />
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-8 mt-16 h-screen overflow-y-auto bg-white/10 backdrop-blur-md rounded-lg" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitScrollbar: 'none' }}>
 
         {/* Story header */}
@@ -144,6 +153,7 @@ const Story = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import prophetsData from "../data/prophets.js";
 import sahabasData from "../data/sahabas.js";
 import bg from "../assets/background.jpg";
-import Header from "../components/Header";    
+import Header from "../components/Header";
+import { SEO, PAGE_SEO } from "../utils/seo";    
 
 const Stories = () => {
   const navigate = useNavigate();
@@ -39,9 +40,16 @@ const Stories = () => {
   };
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${bg})` }}
+    <>
+      <SEO 
+        title={PAGE_SEO.stories.title}
+        description={PAGE_SEO.stories.description}
+        keywords={PAGE_SEO.stories.keywords}
+        url="/stories"
+      />
+      <div
+        className="min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${bg})` }}
     >
       <Header />
 
@@ -125,6 +133,7 @@ const Stories = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -10,8 +10,8 @@ const Stories = () => {
   const [allStories, setAllStories] = useState([]);
   const [prophets, setProphets] = useState([]);
   const [sahabas, setSahabas] = useState([]);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
+
+
 
   useEffect(() => {
     const combined = [...prophetsData, ...sahabasData];
@@ -25,17 +25,7 @@ const Stories = () => {
     setSahabas(sahabaNames);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+
 
   const handleCardClick = (story) => {
     navigate(`/story/${story.id}`);
@@ -58,51 +48,9 @@ const Stories = () => {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto py-12 px-4 w-full overflow-hidden">
         <div className="mb-12 text-center">
-          <div className="relative inline-block" ref={dropdownRef}>
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="text-5xl font-bold mb-4 text-cardo op-shadow-lg font-cardo hover:text-blue-600 transition-colors"
-            >
-              All Stories
-            </button>
-
-            {isDropdownOpen && (
-              <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg p-4 w-[480px] gap-8 flex z-10">
-                <div>
-                  <h3 className="font-semibold mb-2 text-black">Prophets</h3>
-                  <ul className="space-y-1 text-sm">
-                    {prophets.map((name) => (
-                      <li key={`p-${name}`}>
-                        <Link
-                          className="hover:text-blue-600 text-gray-600 transition-colors duration-200 block py-1"
-                          to={`/person/Prophet/${encodeURIComponent(name)}`}
-                          onClick={() => setIsDropdownOpen(false)}
-                        >
-                          {name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2 text-black">Sahabas</h3>
-                  <ul className="space-y-1 text-sm">
-                    {sahabas.map((name) => (
-                      <li key={`s-${name}`}>
-                        <Link
-                          className="hover:text-blue-600 text-gray-600 transition-colors duration-200 block py-1"
-                          to={`/person/Sahaba/${encodeURIComponent(name)}`}
-                          onClick={() => setIsDropdownOpen(false)}
-                        >
-                          {name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            )}
-          </div>
+          <h1 className="text-5xl font-bold mb-4 text-cardo op-shadow-lg font-cardo hover:text-blue-600 transition-colors">
+            All Stories
+          </h1>
           <p className="text-xl text-cardo drop-shadow-md max-w-2xl mx-auto font-cardo">
             Explore timeless tales of faith, wisdom, and courage from the lives of Prophets and Sahabas
           </p>

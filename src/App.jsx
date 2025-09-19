@@ -4,6 +4,7 @@ import Stories from "./pages/Stories";
 import Person from "./pages/Person";
 import Story from "./pages/Story";
 import About from "./pages/About";
+import Inspire from "./pages/Inspire";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/person/:category/:person" element={<Person />} />
         <Route path="/story/:id" element={<Story />} />
         <Route path="/about" element={<About />} />
+        <Route path="/inspire" element={<Inspire />} />
       </Routes>
     </div>
   );

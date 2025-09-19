@@ -63,6 +63,9 @@ const Header = () => {
           <Link to="/about" className="hover:text-blue-600">
             About
           </Link>
+          <Link to="/inspire" className="hover:text-blue-600">
+            Inspire
+          </Link>
           <div className="relative" ref={dropdownRef}>
             <button
               className="hover:text-blue-600"
@@ -144,6 +147,13 @@ const Header = () => {
             onClick={() => setMobileOpen(false)}
           >
             About
+          </Link>
+          <Link
+            to="/inspire"
+            className="hover:text-blue-600"
+            onClick={() => setMobileOpen(false)}
+          >
+            Inspire
           </Link>
 
           {/* Mobile Dropdown for Stories */}

@@ -10,8 +10,6 @@ const Story = () => {
   const navigate = useNavigate();
   const [story, setStory] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [nextStory, setNextStory] = useState(null);
-  const [prevStory, setPrevStory] = useState(null);
 
   useEffect(() => {
     setLoading(true);
@@ -21,15 +19,8 @@ const Story = () => {
 
     if (foundStory) {
       setStory(foundStory);
-      
-      // Find next and previous stories
-      const currentIndex = allStories.findIndex((s) => s.id === id);
-      if (currentIndex !== -1) {
-        setNextStory(currentIndex < allStories.length - 1 ? allStories[currentIndex + 1] : null);
-        setPrevStory(currentIndex > 0 ? allStories[currentIndex - 1] : null);
-      }
     } else {
-      navigate("/"); // Redirect if not found
+      navigate("/"); 
     }
 
     setLoading(false);

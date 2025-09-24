@@ -5,15 +5,15 @@ import sahabasData from "../data/sahabas.js";
 import logo from "../assets/logo.png";
 
 const Header = () => {
-  const [open, setOpen] = useState(false); // Desktop dropdown
-  const [mobileOpen, setMobileOpen] = useState(false); // Mobile menu toggle
-  const [mobileStoriesOpen, setMobileStoriesOpen] = useState(false); // Mobile dropdown
+  const [open, setOpen] = useState(false); 
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileStoriesOpen, setMobileStoriesOpen] = useState(false); 
   const [prophets, setProphets] = useState([]);
   const [sahabas, setSahabas] = useState([]);
-  const [scrolled, setScrolled] = useState(false); // Track scroll for desktop
+  const [scrolled, setScrolled] = useState(false); 
   const dropdownRef = useRef(null);
 
-  // Detect scroll for desktop blur
+  
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -22,7 +22,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close desktop dropdown when clicking away
+  
   useEffect(() => {
     const onClickAway = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -33,7 +33,7 @@ const Header = () => {
     return () => document.removeEventListener("click", onClickAway);
   }, []);
 
-  // Load unique names
+ 
   useEffect(() => {
     setProphets([...new Set(prophetsData.map((story) => story.name))]);
     setSahabas([...new Set(sahabasData.map((story) => story.name))]);
@@ -55,7 +55,7 @@ const Header = () => {
           />
         </Link>
 
-        {/* Desktop Navigation */}
+       
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="hover:text-blue-600">
             Home
@@ -118,7 +118,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* Mobile Menu Toggle */}
+   
         <div className="md:hidden">
           <button
             onClick={() => setMobileOpen((v) => !v)}
@@ -131,7 +131,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       {mobileOpen && (
         <div className="md:hidden backdrop-blur border-t border-b shadow-md px-4 py-4 flex flex-col gap-3 transition-all duration-300" style={{ backgroundColor: '#E3E1D8' }}>
           <Link
@@ -156,7 +156,7 @@ const Header = () => {
             Inspire
           </Link>
 
-          {/* Mobile Dropdown for Stories */}
+          
           <div>
             <button
               onClick={() => setMobileStoriesOpen((v) => !v)}

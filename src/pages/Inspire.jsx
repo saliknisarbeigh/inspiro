@@ -35,7 +35,7 @@ const Inspire = () => {
           </p>
         </div>
 
-        {/* Quotes Grid */}
+      
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {inspiringQuotes.map((quote) => (
             <div

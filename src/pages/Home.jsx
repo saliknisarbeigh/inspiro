@@ -58,6 +58,7 @@ const Home = () => {
               >
                 About
               </Link>
+              
             </div>
           </div>
         </div>

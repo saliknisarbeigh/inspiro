@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://inspiro.app/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Allow search engines to crawl all important pages
+Allow: /$
+Allow: /about$
+Allow: /stories$
+Allow: /inspire$
+Allow: /person/
+
+# Block common development and admin paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /src/
+Disallow: /public/
